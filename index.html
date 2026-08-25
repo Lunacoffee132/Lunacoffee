@@ -3,9 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Speisekarte und Öffnungszeiten von Luna Coffee in Überlingen.">
+  <meta name="description" content="Luna Coffee – Café in Überlingen für Specialty Coffee, Cappuccino, Matcha, Iced Drinks und Croissants. Menü, Öffnungszeiten und Anfahrt.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Luna Coffee – Jürgen Metzner">
+  <meta name="geo.region" content="DE-BW">
+  <meta name="geo.placename" content="Überlingen">
   <meta name="theme-color" content="#173c33">
-  <title>Luna Coffee – Menü</title>
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luna Coffee | Café in Überlingen">
+  <meta property="og:description" content="Specialty Coffee, Matcha, Iced Drinks und Croissants in der Christophstraße 35 in Überlingen.">
+  <meta property="og:site_name" content="Luna Coffee">
+  <title>Café Überlingen | Luna Coffee – Menü &amp; Öffnungszeiten</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Luna Coffee",
+    "description": "Café in Überlingen für Specialty Coffee, Matcha, Iced Drinks und Croissants.",
+    "telephone": "+49 174 3248431",
+    "email": "luna.ueberlingen@gmail.com",
+    "priceRange": "€€",
+    "servesCuisine": ["Specialty Coffee", "Kaffee", "Matcha", "Gebäck"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Christophstraße 35",
+      "postalCode": "88662",
+      "addressLocality": "Überlingen",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 47.7674499,
+      "longitude": 9.1584167
+    },
+    "sameAs": ["https://www.instagram.com/lunacoffee_ub/"],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"09:00","closes":"16:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"09:00","closes":"17:30"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"16:00"}
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -283,6 +324,32 @@
       font-size: 0.78rem;
     }
 
+    .intro {
+      max-width: 720px;
+      margin: 0 auto 18px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .legal {
+      max-width: 680px;
+    }
+
+    .legal h3 {
+      margin: 24px 0 6px;
+      color: var(--green);
+      font-size: 1rem;
+    }
+
+    .legal p {
+      margin: 0 0 14px;
+    }
+
+    .footer-links {
+      margin-top: 9px;
+    }
+
     @media (min-width: 720px) {
       .page {
         padding-inline: 32px;
@@ -332,12 +399,15 @@
       <p class="tagline">Specialty Coffee · Matcha · Pastries</p>
     </header>
 
+    <p class="intro">Dein Café in Überlingen für sorgfältig zubereiteten Specialty Coffee, cremigen Matcha, erfrischende Iced Drinks und Croissants – mitten in der Altstadt.</p>
+
     <nav class="quick-links" aria-label="Seitennavigation">
       <a href="#coffee">Coffee</a>
       <a href="#non-coffee">Non-Coffee</a>
       <a href="#iced">Iced</a>
       <a href="#food">Food</a>
       <a href="#visit">Besuch</a>
+      <a href="#impressum">Impressum</a>
     </nav>
 
     <section class="section" id="coffee">
@@ -441,8 +511,38 @@
       </div>
     </section>
 
+    <section class="section legal" id="impressum">
+      <h2 class="section-title">IMPRESSUM</h2>
+
+      <h3>Angaben gemäß § 5 DDG</h3>
+      <p>
+        Luna Coffee<br>
+        Inhaber: Jürgen Metzner<br>
+        Einzelunternehmen<br>
+        Christophstraße 35<br>
+        88662 Überlingen
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        Telefon: <a href="tel:+491743248431">0174 3248431</a><br>
+        E-Mail: <a href="mailto:luna.ueberlingen@gmail.com">luna.ueberlingen@gmail.com</a>
+      </p>
+
+      <h3>Verantwortlich für den Inhalt</h3>
+      <p>
+        Jürgen Metzner<br>
+        Christophstraße 35<br>
+        88662 Überlingen
+      </p>
+
+      <h3>Verbraucherstreitbeilegung</h3>
+      <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    </section>
+
     <footer>
       Alle Preise in Euro · Änderungen und Verfügbarkeit vorbehalten
+      <div class="footer-links"><a href="#impressum">Impressum</a></div>
     </footer>
 
   </main>
