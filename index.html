@@ -220,6 +220,23 @@
       line-height: 1.7;
     }
 
+    .food-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .croissant-photo {
+      display: block;
+      width: 100%;
+      max-height: 430px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 22px;
+      background: var(--paper);
+    }
+
     .visit-card {
       overflow: hidden;
       border-radius: 24px;
@@ -361,6 +378,11 @@
         gap: 52px;
       }
 
+      .food-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+        gap: 42px;
+      }
+
       .visit-content {
         grid-template-columns: 0.9fr 1.1fr;
         align-items: start;
@@ -453,10 +475,20 @@
 
     <section class="section" id="food">
       <h2 class="section-title">FOOD</h2>
-      <div class="menu-list">
-        <div class="menu-item"><span class="item-name">Croissant</span><span class="item-price">2,80 €</span></div>
-        <div class="menu-item"><span class="item-name">Mit Dip</span><span class="item-price">+1,50 €</span></div>
-        <p class="item-note">Bueno · Pistazie · Nutella · Weiße Schokolade</p>
+      <div class="food-layout">
+        <div class="menu-list">
+          <div class="menu-item"><span class="item-name">Croissant</span><span class="item-price">2,80 €</span></div>
+          <div class="menu-item"><span class="item-name">Mit Dip</span><span class="item-price">+1,50 €</span></div>
+          <p class="item-note">Bueno · Pistazie · Nutella · Weiße Schokolade</p>
+        </div>
+
+        <img class="croissant-photo"
+             src="croissant-optimiert.webp"
+             alt="Croissant mit Pistazien-Dip bei Luna Coffee in Überlingen"
+             width="678"
+             height="900"
+             loading="lazy"
+             decoding="async">
       </div>
 
       <div class="info-card">
