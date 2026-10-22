@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Luna Coffee – Café in Überlingen für Specialty Coffee, Cappuccino, Matcha, Iced Drinks und Croissants. Menü, Öffnungszeiten und Anfahrt." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="Luna Coffee – Jürgen Metzner" name="author"/>
+<meta content="DE-BW" name="geo.region"/>
+<meta content="Überlingen" name="geo.placename"/>
+<meta content="#173c33" name="theme-color"/>
+<meta content="de_DE" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="Luna Coffee | Café in Überlingen" property="og:title"/>
+<meta content="Specialty Coffee, Matcha, Iced Drinks und Croissants in der Christophstraße 35 in Überlingen." property="og:description"/>
+<meta content="Luna Coffee" property="og:site_name"/>
+<title>Café Überlingen | Luna Coffee – Menü &amp; Öffnungszeiten</title>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Luna Coffee",
+  "description": "Café in Überlingen für Specialty Coffee, Matcha, Iced Drinks und Croissants.",
+  "telephone": "+49 174 3248431",
+  "email": "luna.ueberlingen@gmail.com",
+  "priceRange": "€€",
+  "servesCuisine": [
+    "Specialty Coffee",
+    "Kaffee",
+    "Matcha",
+    "Gebäck"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Christophstraße 35",
+    "postalCode": "88662",
+    "addressLocality": "Überlingen",
+    "addressRegion": "Baden-Württemberg",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.7674499,
+    "longitude": 9.1584167
+  },
+  "sameAs": [
+    "https://www.instagram.com/lunacoffee_ub/"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "09:00",
+      "closes": "16:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "17:30"
+    }
+  ]
+}</script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --green: #173c33;
+      --green-dark: #102d27;
+      --cream: #f5f1e8;
+      --paper: #fffdf8;
+      --text: #171a18;
+      --muted: #6d746f;
+      --line: rgba(23, 60, 51, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(100%, 900px);
+      margin: 0 auto;
+      padding: 22px 18px 48px;
+    }
+
+    .header {
+      padding: 34px 0 26px;
+      text-align: center;
+    }
+
+    .logo {
+      margin: 0;
+      color: var(--green);
+      font-family: "Bowlby One", Impact, sans-serif;
+      font-size: clamp(2.7rem, 11vw, 5.8rem);
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    .tagline {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    .quick-links {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0 14px;
+      background: linear-gradient(
+        to bottom,
+        var(--cream) 0%,
+        var(--cream) 78%,
+        rgba(245, 241, 232, 0) 100%
+      );
+      scrollbar-width: none;
+    }
+
+    .quick-links::-webkit-scrollbar {
+      display: none;
+    }
+
+    .quick-links a {
+      flex: 0 0 auto;
+      padding: 9px 14px;
+      border: 1px solid var(--green);
+      border-radius: 999px;
+      color: var(--green);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: rgba(245, 241, 232, 0.88);
+      backdrop-filter: blur(8px);
+    }
+
+    .quick-links a:hover {
+      background: var(--green);
+      color: white;
+    }
+
+    .section {
+      scroll-margin-top: 70px;
+      padding: 34px 0 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .section-title {
+      margin: 0 0 21px;
+      color: var(--green);
+      font-family: "Bowlby One", Impact, sans-serif;
+      font-size: clamp(2rem, 7vw, 3.8rem);
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 1;
+    }
+
+    .menu-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+
+    .menu-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: baseline;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .menu-item:last-child {
+      border-bottom: 0;
+    }
+
+    .item-name {
+      font-size: 1.02rem;
+      font-weight: 500;
+    }
+
+    .item-price {
+      color: var(--green);
+      font-size: 1rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .item-note {
+      margin: 2px 0 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .info-card {
+      margin-top: 18px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255, 253, 248, 0.56);
+      color: var(--green);
+      text-align: center;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .food-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .croissant-photo {
+      display: block;
+      width: 100%;
+      max-height: 430px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 22px;
+      background: var(--paper);
+    }
+
+    .visit-card {
+      overflow: hidden;
+      border-radius: 24px;
+      background: var(--green);
+      color: white;
+    }
+
+    .visit-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 26px;
+      padding: 25px;
+    }
+
+    .visit-title {
+      margin: 0 0 8px;
+      font-family: "Bowlby One", Impact, sans-serif;
+      font-size: clamp(1.7rem, 6vw, 2.9rem);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .address {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.65;
+    }
+
+    .hours {
+      display: grid;
+      gap: 0;
+    }
+
+    .hours-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .hours-row:last-child {
+      border-bottom: 0;
+    }
+
+    .hours-row strong {
+      white-space: nowrap;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 0 25px 25px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+    }
+
+    .button-light {
+      background: var(--paper);
+      color: var(--green);
+    }
+
+    .button-outline {
+      border: 1px solid rgba(255, 255, 255, 0.48);
+      color: white;
+    }
+
+    .instagram-strip {
+      margin-top: 24px;
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .instagram-strip a {
+      color: var(--green);
+      font-family: "Bowlby One", Impact, sans-serif;
+      font-size: clamp(1.4rem, 5vw, 2.2rem);
+      text-decoration: none;
+    }
+
+    footer {
+      padding: 31px 0 6px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.78rem;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0 auto 18px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .legal {
+      max-width: 680px;
+    }
+
+    .legal h3 {
+      margin: 24px 0 6px;
+      color: var(--green);
+      font-size: 1rem;
+    }
+
+    .legal p {
+      margin: 0 0 14px;
+    }
+
+    .footer-links {
+      margin-top: 9px;
+    }
+
+    @media (min-width: 720px) {
+      .page {
+        padding-inline: 32px;
+      }
+
+      .menu-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 52px;
+      }
+
+      .food-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+        gap: 42px;
+      }
+
+      .visit-content {
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: start;
+        padding: 34px;
+      }
+
+      .actions {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 34px 34px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .quick-links,
+      .actions,
+      .instagram-strip {
+        display: none;
+      }
+
+      .page {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  </style>
+<style>
+/* Luna photography — warm, quiet imagery within the existing brand. */
+.luna-hero{margin:8px 0 38px;border-radius:22px;overflow:hidden;background:var(--green)}
+.luna-hero img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:50% 48%}
+.coffee-photo-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.85fr);gap:36px;align-items:center}
+.menu-photo{display:block;width:100%;height:auto;border-radius:20px;aspect-ratio:3/4;object-fit:cover}
+.iced-photo{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 56%;border-radius:18px;margin-top:22px}
+.luna-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0 38px}
+.luna-gallery figure{margin:0;overflow:hidden;border-radius:18px;background:var(--green)}
+.luna-gallery img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.luna-gallery figure:last-child img{object-position:50% 50%}
+.quick-links{justify-content:flex-start}
+@media(min-width:720px){.quick-links{justify-content:center}.menu-columns{position:relative}.menu-columns #non-coffee:after{content:'SPECIALTY COFFEE · MATCHA · PASTRIES';display:block;color:var(--green);font-size:.68rem;letter-spacing:.13em;border-top:1px solid var(--line);margin-top:30px;padding-top:20px;line-height:1.8}}
+@media(max-width:600px){.coffee-photo-layout{grid-template-columns:1fr;gap:22px}.menu-photo{aspect-ratio:4/3;object-position:50% 58%}.luna-hero{margin-bottom:25px;border-radius:16px}.luna-hero img{aspect-ratio:4/3}.luna-gallery{gap:8px;margin:22px 0 30px}.luna-gallery figure{border-radius:12px}.item-name{font-size:.95rem}.item-price{font-size:.94rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.luna-hero,.menu-photo,.iced-photo,.luna-gallery{display:none}.coffee-photo-layout{display:block}}
+</style></head>
+<body>
+<main class="page">
+<header class="header" id="top">
+<h1 class="logo">LUNA COFFEE</h1>
+<p class="tagline">Specialty Coffee · Matcha · Pastries</p>
+</header>
+<p class="intro">Dein Café in Überlingen für sorgfältig zubereiteten Specialty Coffee, cremigen Matcha, erfrischende Iced Drinks und Croissants – mitten in der Altstadt.</p>
+<nav aria-label="Seitennavigation" class="quick-links">
+<a href="#coffee">Coffee</a>
+<a href="#non-coffee">Non-Coffee</a>
+<a href="#iced">Iced</a>
+<a href="#food">Food</a>
+<a href="#visit">Besuch</a>
+<a href="#impressum">Impressum</a>
+</nav><figure class="luna-hero"><img alt="Verschiedene Kaffeespezialitäten mit Latte Art bei Luna Coffee" class="" decoding="async" fetchpriority="high" height="640" loading="eager" sizes="(max-width: 600px) calc(100vw - 36px), 836px" src="kaffee-momente-960.webp" srcset="kaffee-momente-480.webp 480w, kaffee-momente-960.webp 960w, kaffee-momente-1600.webp 1600w" width="960"/></figure>
+<section class="section" id="coffee">
+<h2 class="section-title">COFFEE</h2>
+
+<div class="coffee-photo-layout"><div class="menu-list">
+<div class="menu-item"><span class="item-name">Espresso</span><span class="item-price">2,00 €</span></div>
+<div class="menu-item"><span class="item-name">Doppelter Espresso</span><span class="item-price">3,50 €</span></div>
+<div class="menu-item"><span class="item-name">Cappuccino</span><span class="item-price">3,90 / 4,40 €</span></div>
+<div class="menu-item"><span class="item-name">Flat White</span><span class="item-price">4,40 €</span></div>
+<div class="menu-item"><span class="item-name">Café Latte</span><span class="item-price">4,00 €</span></div>
+<div class="menu-item"><span class="item-name">Short / Long Macchiato</span><span class="item-price">2,60 / 3,80 €</span></div>
+<div class="menu-item"><span class="item-name">Latte Macchiato</span><span class="item-price">4,50 €</span></div>
+<div class="menu-item"><span class="item-name">Americano</span><span class="item-price">4,00 €</span></div>
+<div class="menu-item"><span class="item-name">Dirty Chai</span><span class="item-price">5,00 €</span></div>
+</div><img alt="Cappuccino mit Latte Art in einer grauen Tasse auf einem Holztablett" class="menu-photo" decoding="async" height="1200" loading="lazy" sizes="(max-width: 600px) calc(100vw - 36px), 400px" src="cappuccino-960.webp" srcset="cappuccino-480.webp 480w, cappuccino-960.webp 960w" width="960"/></div></section>
+<div class="menu-columns">
+<section class="section" id="non-coffee">
+<h2 class="section-title">NON-COFFEE</h2>
+<div class="menu-list">
+<div class="menu-item"><span class="item-name">Chai Latte</span><span class="item-price">4,50 €</span></div>
+<div class="menu-item"><span class="item-name">Heiße Schokolade</span><span class="item-price">4,00 €</span></div>
+<div class="menu-item"><span class="item-name">Matcha Latte</span><span class="item-price">5,00 €</span></div>
+<div class="menu-item"><span class="item-name">Fritz Limo</span><span class="item-price">3,20 €</span></div>
+<div class="menu-item"><span class="item-name">San Pellegrino</span><span class="item-price">3,80 €</span></div>
+<div class="menu-item"><span class="item-name">Peroni</span><span class="item-price">4,00 €</span></div>
+</div>
+</section>
+<section class="section" id="iced">
+<h2 class="section-title">ICED DRINKS</h2>
+<div class="menu-list">
+<div class="menu-item"><span class="item-name">Iced Schokolade</span><span class="item-price">5,50 €</span></div>
+<div class="menu-item"><span class="item-name">Iced Chai</span><span class="item-price">6,00 €</span></div>
+<div class="menu-item"><span class="item-name">Iced Dirty Chai</span><span class="item-price">6,50 €</span></div>
+<div class="menu-item"><span class="item-name">Iced Matcha Latte</span><span class="item-price">6,00 €</span></div>
+<p class="item-note">Strawberry oder Mango: 6,50 €</p>
+<div class="menu-item"><span class="item-name">Alle Iced Coffees</span><span class="item-price">+1,50 €</span></div>
+</div>
+<img alt="Iced Matcha Latte mit grüner Matchaschicht auf Milch und Eis" class="iced-photo" decoding="async" height="1200" loading="lazy" sizes="(max-width: 600px) calc(100vw - 36px), 400px" src="iced-matcha-960.webp" srcset="iced-matcha-480.webp 480w, iced-matcha-960.webp 960w" width="960"/></section>
+</div>
+<section class="section" id="food">
+<h2 class="section-title">FOOD</h2>
+<div class="food-layout">
+<div class="menu-list">
+<div class="menu-item"><span class="item-name">Croissant</span><span class="item-price">2,80 €</span></div>
+<div class="menu-item"><span class="item-name">Mit Dip</span><span class="item-price">+1,50 €</span></div>
+<p class="item-note">Bueno · Pistazie · Nutella · Weiße Schokolade</p>
+</div>
+<img alt="Croissant mit Pistazien-Dip bei Luna Coffee in Überlingen" class="croissant-photo" decoding="async" height="900" loading="lazy" src="croissant-optimiert.webp" width="678"/>
+</div>
+<div class="info-card">
+        Kuhmilch · Hafermilch · Mandel · Kokos · Laktosefrei<br/>
+        Extra Shot +1,50 €
+      </div>
+</section>
+<section aria-label="Kaffeemomente bei Luna" class="luna-gallery"><figure><img alt="Kaffee im hohen Glas mit einer feinen Milchschaumhaube" class="" decoding="async" height="1200" loading="lazy" sizes="(max-width: 600px) calc(100vw - 36px), 400px" src="kaffee-im-glas-960.webp" srcset="kaffee-im-glas-480.webp 480w, kaffee-im-glas-960.webp 960w" width="960"/></figure><figure><img alt="Kaffee im Glas mit Latte Art auf einem Holztablett" class="" decoding="async" height="1200" loading="lazy" sizes="(max-width: 600px) calc(100vw - 36px), 400px" src="latte-art-960.webp" srcset="latte-art-480.webp 480w, latte-art-960.webp 960w" width="960"/></figure><figure><img alt="Blick von oben auf eine Tasse Kaffee mit Latte Art" class="" decoding="async" height="640" loading="lazy" sizes="(max-width: 600px) calc(100vw - 36px), 400px" src="kaffeepause-960.webp" srcset="kaffeepause-480.webp 480w, kaffeepause-960.webp 960w" width="960"/></figure></section><section class="section" id="visit">
+<h2 class="section-title">BESUCH UNS</h2>
+<div class="visit-card">
+<div class="visit-content">
+<div>
+<h3 class="visit-title">LUNA COFFEE</h3>
+<p class="address">
+              Christophstraße 35<br/>
+              88662 Überlingen
+            </p>
+</div>
+<div class="hours">
+<div class="hours-row"><span>Montag–Donnerstag</span><strong>09:00–16:30</strong></div>
+<div class="hours-row"><span>Freitag &amp; Samstag</span><strong>09:00–17:30</strong></div>
+<div class="hours-row"><span>Sonntag</span><strong>geschlossen</strong></div>
+</div>
+</div>
+<div class="actions">
+<a class="button button-light" href="https://www.google.de/maps/place/Luna+Coffee/@48.935825,7.6018095,8z/data=!4m10!1m2!2m1!1sluna+coffee!3m6!1s0x479a59d86ed6018b:0xc98e1c7f1f01339b!8m2!3d47.7674499!4d9.1584167!15sCgtsdW5hIGNvZmZlZVoNIgtsdW5hIGNvZmZlZZIBC2NvZmZlZV9zaG9w4AEA!16s%2Fg%2F11zb5z7_s5?entry=ttu&amp;g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" rel="noopener noreferrer" target="_blank">
+            Route planen
+          </a>
+<a class="button button-outline" href="https://www.instagram.com/lunacoffee_ub/" rel="noopener noreferrer" target="_blank">
+            Instagram
+          </a>
+</div>
+</div>
+<div class="instagram-strip">
+<a href="https://www.instagram.com/lunacoffee_ub/" rel="noopener noreferrer" target="_blank">
+          @lunacoffee_ub ↗
+        </a>
+</div>
+</section>
+<section class="section legal" id="impressum">
+<h2 class="section-title">IMPRESSUM</h2>
+<h3>Angaben gemäß § 5 DDG</h3>
+<p>
+        Luna Coffee<br/>
+        Inhaber: Jürgen Metzner<br/>
+        Einzelunternehmen<br/>
+        Christophstraße 35<br/>
+        88662 Überlingen
+      </p>
+<h3>Kontakt</h3>
+<p>
+        Telefon: <a href="tel:+491743248431">0174 3248431</a><br/>
+        E-Mail: <a href="mailto:luna.ueberlingen@gmail.com">luna.ueberlingen@gmail.com</a>
+</p>
+<h3>Verantwortlich für den Inhalt</h3>
+<p>
+        Jürgen Metzner<br/>
+        Christophstraße 35<br/>
+        88662 Überlingen
+      </p>
+<h3>Verbraucherstreitbeilegung</h3>
+<p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+</section>
+<footer>
+      Alle Preise in Euro · Änderungen und Verfügbarkeit vorbehalten
+      <div class="footer-links"><a href="#impressum">Impressum</a></div>
+</footer>
+</main>
+</body>
+</html>
